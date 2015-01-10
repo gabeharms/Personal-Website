@@ -1,0 +1,179 @@
+/*
+	Designer		: Gabe Harms
+	Date Created	: 1/1/2015
+	Last Update		: 1/9/2015
+	Pages Linked	: Homepage.html
+	Purpose			: Styles the Main Body and Button Link portions of the page
+*/
+
+#Main_Body {
+	margin-top: 2%;
+	height: 60%;
+}
+
+#ButtonLinks {
+	height: 30%;
+}
+
+#MainBgImg{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	-webkit-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.0em;
+	margin-top: 0;
+    margin-left: 0%;
+	background-color: #000000;
+}
+
+#MainBgImg img {
+	width: 100%;
+    height: 100%;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;	
+    position: absolute;
+}
+
+#Transbox_1 {
+	position: absolute;
+	top:47%;
+	width: 70%;
+    height: 18%;
+    margin: 4% 5%;	
+	-webkit-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	padding-right: 8%;
+	padding-left: 3%;
+	background-color: #000000;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#Welcome {
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 2vw;
+	color: #FFFFFF
+}
+
+#About {
+	position: absolute;
+	top: 37%;
+	left: 11%;
+	padding-right: 8%;
+	opacity: 1.0;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.9vw;
+	color: #FFFFFF;
+}
+
+#Signature {
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 1.0vw;
+	color: #FFFFFF;
+}
+
+.icons {
+	-webkit-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.0em;
+	padding-bottom: 15%;
+	padding-right: 19%;
+	padding-left: 0%;
+	margin-right: 60%;
+	margin-top: -0%;
+	margin-bottom: -0%;
+    margin-left: 0%;
+}
+
+.icon_text {
+	position: absolute;
+	top: 100%;
+	width:100%;
+    height: 15%;
+	padding-top:0%;	
+	background-color: #000000;
+    opacity: 1.0;
+    filter: alpha(opacity=60); /* For IE8 and earlier */	
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 1.1vw;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.icon_text p {
+	position: relative;
+	bottom:	50%;
+}
+
+#Coursework {
+	position: absolute;
+	top: 80%;
+	background-color: #0BEBDC;
+}
+
+#Coursework:hover #education_text {
+	background-color: #0BEBDC;
+}
+
+#Projects {
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	background-color: #E49622;
+}
+
+#Projects:hover #projects_text {
+	background-color: #E49622;
+}
+
+#Work_Experience {
+	position: absolute;
+	top: 80%;
+	left: 81%;
+	background-color: #0691E7;
+}
+
+#Work_Experience:hover #work_text {
+	background-color: #0691E7;
+}
+
+#Coursework:hover, #Projects:hover, #Work_Experience:hover {
+	background: #fff;
+	color: #fff;
+}
+
+a {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+img[src^="education_icon.svg"], img[src^="projects_icon.svg"], img[src^="work_icon.svg"]  {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+	 -webkit-transform: scale(1.0);` /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.0); /* FF3.5+ */
+      -ms-transform: scale(1.0); /* IE9 */
+       -o-transform: scale(1.0); /* Opera 10.5+ */
+          transform: scale(1.0);
+}

@@ -1,0 +1,156 @@
+/*
+	Designer		: Gabe Harms
+	Date Created	: 1/8/2015
+	Last Update		: 1/9/2015
+	Pages Linked	: all pages
+	Purpose			: Sets up entire page's structure, 
+						including the top menu
+*/
+
+html, body {
+	height: 98%;
+}
+
+body {
+	position: relative;
+	width: 75%;
+	margin:0px auto;
+}
+
+#Menu_Bar {
+	position: relative;
+	height: 10%;
+}
+
+a {
+	color: black;
+}
+
+#Iteractive_Menu {
+	width: 75vw;
+	height: 40%;
+	position: relative;
+	top: 50%;
+	z-index:1000;
+}
+
+ul li a {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: .8vw;
+	text-decoration:none;
+	display: inline-block;
+	width: 100%;
+	height: 0%;
+	position: relative;
+	top: -10%;
+	padding-top: 5%;
+	padding-bottom: 13%;
+	margin-right: 3%;
+	background: #fff;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	text-align: center;
+}
+
+ul li a:visited {
+	color: #000000;
+}	
+
+ul:hover li:hover a:hover {
+  background: #555;
+  color: #fff;
+}
+
+ul li:hover ul:hover a:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+ul{
+	position:absolute;
+	left: 0;
+	-webkit-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);	
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	display: inline;
+	margin: 0;	
+	padding: 0px 0px 0px 0;
+	list-style: none;
+}
+
+ul li{
+	width: 15.6vw;
+	height: 80%;
+	font: bold 12px/18px sans-serif;
+	display: block;
+	margin-right: -1%;
+	position: relative;
+	left: 0%;
+	float: left;
+	background: #fff;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+ul li:hover {
+	background: #555;
+	color: #fff;
+}
+
+#dropdown {
+	padding: 0;
+	position: absolute;
+	top: 148%;
+	left: 50%;
+	width: 5%;
+	-webkit-box-shadow: none;
+	margin-bottom: 200%;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-transition: opacity 0.2s;
+}
+
+.dropdown_item{ 
+	position: relative;
+	clear: both;
+	width: 900%;
+	padding-top: .1%;
+	padding-bottom: 0%;
+	margin-top: 0%;
+	margin-bottom: 90%;
+	z-index: 10000;
+	background: #FFFFFF; 
+	display: block; 
+	color: #fff;
+}
+
+#dropdown li a {
+	padding-bottom: 25%;
+	padding-top: 8%;
+}
+.dropbox_item:hover { background: #666; } 
+
+ul li:hover #dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}

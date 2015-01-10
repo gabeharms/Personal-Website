@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head bgcolor="#848484"> 
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="standardPage.css">
+
+</head>
+
+<body>
+	<section id = "Menu_Bar">
+		<section id = "Iteractive_Menu">
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li>
+					<a href="#">Portfolio</a>
+					<ul id = "dropdown">
+						<li class = "dropdown_item"><a href="Education.html">Education</a></li>
+						<li class = "dropdown_item"><a href="Work_Experience.html">Work Experience</a></li>
+						<li class = "dropdown_item"><a href="Projects.html">Projects</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Login.html">Login</a></li>
+			</ul>
+		</section>
+		<script src = "menu_creator.js">
+		</script>
+	</section>
+
+	<section id = "Main_Body">
+		<section id = "margins">
+			<h1>Web Server</h1>
+			<div>
+				<hr></hr>
+				<div id = "Content">
+					<p>During my junior year I took a systems programming class. This was a class that taught us how to do very
+						very low level development using linux. This was one of my favorite classes, and I learned alot very quickly
+						including how to use vim, makefiles, gcc and gdb. At the end of the course we touched the topic of the socket
+						API. It fascinated me how much power a simple API had. Thus, with my curiousity peaked, I wanted to see what I 
+						could build with it. After a lot of development and dubugging I was able to create a web server that processes
+						requests, and served static content. It was really rewarding seeing my web server be able to serve content to my
+						friends mobile browsers. This project taught me alot about not only software development, but about the details 
+						of internet communication as well. Check out the github link below for source code:
+					</p><br></br>
+					<a href="https://github.com/gabeharms/Web_Server">Web Server</a><br></br>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+</html>

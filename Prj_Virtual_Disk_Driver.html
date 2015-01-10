@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head bgcolor="#848484"> 
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="standardPage.css">
+
+</head>
+
+<body>
+	<section id = "Menu_Bar">
+		<section id = "Iteractive_Menu">
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li>
+					<a href="#">Portfolio</a>
+					<ul id = "dropdown">
+						<li class = "dropdown_item"><a href="Education.html">Education</a></li>
+						<li class = "dropdown_item"><a href="Work_Experience.html">Work Experience</a></li>
+						<li class = "dropdown_item"><a href="Projects.html">Projects</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Login.html">Login</a></li>
+			</ul>
+		</section>
+		<script src = "menu_creator.js">
+		</script>
+	</section>
+ 
+	<section id = "Main_Body">
+		<section id = "margins">
+			<h1>Virtual Disk Driver</h1>
+			<div>
+				<hr></hr>
+				<div id = "Content">
+					<p>This was a project that was assigned to me in one of my CMPSC courses. The goal of the assignment
+						was to create a driver for a disk memory device. The disk organized data into different sectors, and
+						data could only be read/written to the current location of the disk read head. Thus to read or write
+						to a specific location, the head must be moved. Additionally, the only way to communicate with the device was via 3 commands: read, write,
+						and move. Each of these 3 function take several arguments for which sector on the disk and which block 
+						within the sector
+					</p>
+					
+					<p>Thus the goal of the driver was to abstract these low level details in order to have the power to build an
+						application that uses the device with much less difficulty. This was one of my favorite assignments, and I 
+						learned a lot about systems programming. The link to the project is below, and I encourage you to look at the 
+						smsa_driver.c file. This is where the core of the project lies.
+					
+					</p><br></br>
+					<a href="https://github.com/gabeharms/Virtual_Disk_Driver">Virtual Disk Driver</a><br></br>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+</html>

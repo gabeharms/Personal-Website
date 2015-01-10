@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head bgcolor="#848484"> 
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="standardPage.css">
+
+</head>
+
+<body>
+	<section id = "Menu_Bar">
+		<section id = "Iteractive_Menu">
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li>
+					<a href="#">Portfolio</a>
+					<ul id = "dropdown">
+						<li class = "dropdown_item"><a href="Education.html">Education</a></li>
+						<li class = "dropdown_item"><a href="Work_Experience.html">Work Experience</a></li>
+						<li class = "dropdown_item"><a href="Projects.html">Projects</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Login.html">Login</a></li>
+			</ul>
+		</section>
+		<script src = "menu_creator.js">
+		</script>
+	</section>
+
+	<section id = "Main_Body">
+		<section id = "margins">
+			<h1>Door Lock</h1>
+			<div>
+				<hr></hr>
+				<div id = "Content">
+					<p>During my years spent in the college dorms, I found myself constantly fumbling with my keys
+						everytime I needed to get in or out of my room. Sometimes I had books and many other things 
+						in my hands which made handling keys difficult. That was the inspiration for this project. To 
+						create a way to lock/unlock my door with ease. </p>
+						
+					<p>To achieve this goal I implemented a wireless door lock using an arduino, wireless transmitter/receiverk,
+						and an actuator. The wireless transmitter on my key chain contained a button. When this button was pressed,
+						the wireless received, behind the door, would set a GPIO line high. This line was connected to the arduino, and
+						the arduino continuously checked the voltage of this wire. If it was high, the arduino software would process a
+						"door state change"; meaning that it would lock the door if it was unlocked or unlock the door if it was locked.
+						The arduino would do this by driving 2 wires connected to the actuator high or low. The actuator in turn would
+						push the bolt forward, or pull it backwards. The software for this project can be found at the github link below:
+					</p><br></br>
+					<a href="https://github.com/gabeharms/Arduino_Door_Lock">Door Lock</a><br></br>	
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head bgcolor="#848484"> 
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="standardPage.css">
+	<link rel="stylesheet" type="text/css" href="formStyles.css">
+
+</head>
+
+<body id= "Login_Page">
+	<div id = "Form">
+		<form class="form-container" id ="form">
+			<div class="form-title"><h2>Sign up</h2></div>
+				<div class="form-title">User Name</div>
+					<input class="form-field" type="text" name="UserName" id = "Username" /><br />
+				<div class="form-title">Password</div>
+					<input class="form-field" type="text" name="Password" id = "Password" /><br />
+				<div class="submit-container">
+					<input class="submit-button" id = "home_button" type="button" value="Home" />
+					<input class="submit-button" id = "submit_button" type="submit" value="Submit"  />
+				</div>
+				<div id = "errorMessageContainer">
+						<p id = "errorMessage">do not display this text</p>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src = "formEvents.js">
+	</script>
+</body>
+</html>

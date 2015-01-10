@@ -1,0 +1,90 @@
+/*
+	Designer		: Gabe Harms
+	Date Created	: 1/1/2015
+	Last Update		: 1/9/2015
+	Pages Linked	: About.html, Content.html, Login.html, Work_Experience.html, all Project pages
+	Purpose			: Styles the main body section of the page
+
+*/
+
+#Iteractive_Menu {
+
+	width: 74vw;
+}
+
+ul li{
+	width: 15.40vw;
+	height: 80%;
+}
+
+#Main_Body {
+	-webkit-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	box-shadow: 2px 7px 34px 14px rgba(0,0,0,0.44);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.0em;
+	height: 190%;
+	background-color: #e7a61a;
+	color: #FFFFFF;
+}
+
+#margins {
+	position: relative;
+	top: 3%;
+	margin: 0px auto;
+	width: 70%;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 40px;
+	color: #000000;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 20px;
+	color: #000000;
+
+
+}
+
+#Content p {
+	position: relative;
+	top: 2%;
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 15px;
+	line-height: 30px;
+	padding-right: 6%;
+	color: #FFFFFF;
+}
+
+#Main_Body a {
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#Main_Body a:hover {
+	color: #000000;
+}
+
+#Education  p{
+	position: relative;
+	top: 10%;
+	line-height: 1.4vh;
+}
+
+#Contact_Info {
+	width: 50%;
+	float: left;
+}
+
+#Links {
+	float: left;
+}
+

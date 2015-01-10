@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head bgcolor="#848484"> 
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="standardPage.css">
+
+</head>
+
+<body>
+	<section id = "Menu_Bar">
+		<section id = "Iteractive_Menu">
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li>
+					<a href="#">Portfolio</a>
+					<ul id = "dropdown">
+						<li class = "dropdown_item"><a href="Education.html">Education</a></li>
+						<li class = "dropdown_item"><a href="Work_Experience.html">Work Experience</a></li>
+						<li class = "dropdown_item"><a href="Projects.html">Projects</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Login.html">Login</a></li>
+			</ul>
+		</section>
+		<script src = "menu_creator.js">
+		</script>
+	</section>
+
+	<section id = "Main_Body">
+		<section id = "margins">
+			<h1>Evil Hangman</h1>
+			<div>
+				<hr></hr>
+				<div id = "Content">
+					<p>Evil Hangman is evil because the computer puts off picking a word for as long as possible. 
+						The computer starts off with a dictionary of words. As the user guesses letters the computer 
+						narrows the list of words that are active, meaning words that could still be chosen. The 
+						words in the active list all  have the same pattern as the "word" displayed to the user.
+						A pattern consist of the letters that have been guessed correctly and the letters that have not 
+						been guessed yet. For example, if the current pattern is "-e-e-" then the words "beget", "beret", 
+						"bevel", "defer", "deter" and so forth would be in the list of active words. Those words "match" 
+						the pattern. The "-" characters are wildcard characters and represent any character that has not been guessed yet.
+					</p>
+					<p>
+						When the user guesses a letter the computer splits the current list of words into different families based
+						on the letter the user just guessed and the resulting pattern of that letter in words from the current list. The 
+						computer then picks a list of word from the various lists that have been created. If the computer is being "evil" 
+						it picks the list of words that is largest as the new active list. 
+					
+					</p><br></br>
+					<a href="https://github.com/gabeharms/Evil_Hangman">Evil Hangman</a><br></br>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+
+
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head bgcolor="#848484"> 
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="homePage.css">
+
+</head>
+
+<body>
+	<section id = "Menu_Bar">
+		<section id = "Iteractive_Menu">
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li>
+					<a href="#">Portfolio</a>
+					<ul id = "dropdown">
+						<li class = "dropdown_item"><a href="Education.html">Education</a></li>
+						<li class = "dropdown_item"><a href="Work_Experience.html">Work Experience</a></li>
+						<li class = "dropdown_item"><a href="Projects.html">Projects</a></li>
+					</ul>
+				</li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Login.html">Login</a></li>
+			</ul>
+		</section>
+		<script src = "jquery-1.11.2.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#Menu_Bar").fadeIn(4000);
+			
+			});
+		</script>
+		<script src = "menu_creator.js"></script>
+		
+	</section>
+
+	<section id = "Main_Body">
+		<section id = "MainBgImg">
+			<img src="lion_shrine.jpg" alt="MainBgImg">
+			<img src="psu_image.jpg" alt="MainBgImg">
+			<img src="technology.jpg" alt="MainBgImg">
+			<img src="golf_image.jpg" alt="MainBgImg">
+			<img class = "top" src="technology2.jpg" alt="MainBgImg">
+		</section>
+		
+		<section id = "Transbox_1">
+			<div id = "Welcome">
+				<p>Welcome to my Website</p>
+			</div>
+			<div id = "About">
+				<p>	This is a website I have built in order to demonstrate my professional skills. Please use the site to find more information about me and don't hesitate to contact me for potential openings.</p>
+			</div>
+			<div id = "Signature">
+				<p> - Gabe P. Harms, BS Computer Engineering from Penn State 2015</p>
+			</div>
+		</section>
+	
+		<script src = "mainImgFader.js">
+		</script>
+		
+	</section>	
+
+	<section id = "ButtonLinks">
+		<section id = "Coursework" class = "icons">	
+			<a href="Education.html" class = "education_link"><img src="education_icon.svg" alt="edu"></img></a>
+			<div id = "education_text" class = "icon_text">
+				<p>Education</p>
+			</div>
+		</section>
+
+		<section id = "Projects" class = "icons">
+			<a href="Projects.html" id = "projects_link"><img src="projects_icon.svg" alt="projects"></img></a>
+			<div id = "projects_text" class = "icon_text">
+				<p>Projects</p>
+			</div>
+		</section>
+
+		<section id = "Work_Experience" class = "icons">
+			<a href="Work_Experience.html" id = "work_link"><img src="work_icon.svg" alt="work"></img></a>
+			<div id = "work_text" class = "icon_text">
+				<p>Work Experience</p>
+			</div>
+		</section>
+	</section>
+
+	<script src= "animate_homepage.js">
+	</script>
+</body>
+</html>
